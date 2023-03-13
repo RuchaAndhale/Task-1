@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	
+    <title>Users</title>
+            <link rel="stylesheet" href="/css/pagination.css" type="text/css"/>
+
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+</head>
+<body>
+	<h1>User Details</h1>
+	<div class="container" style="display: flex; height: 100px;">
+		<div class="row" style="width: 25%;">
+			<div class="col-sm-4">
+				<form id="formUser" name="formUser">
+					<br>
+					<div class="form-group" align="left">
+						<label>First Name: </label>
+                		<input type="text" name="firstName" id="fname" placeholder="Enter First Name" required />
+					</div>
+					<br>
+					<div class="form-group" align="left">
+						<label>Last Name: </label>
+                		<input type="text" name="lastName" id="lname" placeholder="Enter Last Name" required />
+					</div>	
+					<br>
+					<div class="form-group" align="left">
+						<label>Email: </label>
+                		<input type="email" name="email" id="email" placeholder="Enter Email" required />
+					</div>	
+					<br>
+					<div class="form-group" align="left">
+						<label>Password: </label>
+                		<input type="password" name="password" id="password" placeholder="Enter Password" required />
+					</div>
+					<br>
+					<div class="form-group" align="left">
+						<button type="submit" id="btnAdd">Add User</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="col-sm-8" style="flex-grow: 1;">
+			<div class="panel-body">
+				<table id="usersTable">
+			        <thead>
+			            <tr>
+							<th>Id</th>
+			                <th>First Name</th>
+			                <th>Last Name</th>
+			                <th>Email</th>
+			                <th>Action</th>
+			            </tr>
+			        </thead>
+			        <tbody></tbody>
+	    		</table>
+
+			</div>
+		</div>  
+	</div>
+    <script type="text/javascript" src="/js/pagination.js"></script>
+</body>
+</html>
