@@ -1,0 +1,227 @@
+
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+	height: 100%;
+}
+
+#formUser input{
+	/*-ms-layout-grid-line: auto;*/
+	padding: 7px;    
+	margin-top: 4px;  
+	       
+}
+
+form {
+	padding: 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.7);
+	border: 2px;
+	border-color: #000;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+h1{
+	font-size: 35px;
+	text-align: center;
+	margin: 25px;
+	font-weight: bold;
+  	text-shadow: -1px -1px dimgray, 1px 1px #55608f, -3px 0 4px darkslategrey;
+  	font-family:Arial, Helvetica, sans-serif;
+  	padding: 20px;
+}
+
+.row{
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#btnAdd{
+	margin-top: 10px;
+	min-width: 1.5em;
+	padding: 0.5em 1em;
+	margin-right: 2px;
+	padding: 0.755em;
+	text-align: center;
+	margin-left: 40px;
+	border: 1px;
+	border-radius: 10px !important;
+	color: #000 !important;
+}
+#btnAdd:hover{
+	border: 1px solid #979797;
+  	background: none !important;
+  	border-radius: 10px !important;
+   	background-color: #000 !important;
+   	color: #fff !important;
+}
+
+.export-btn{
+	float: right;
+	text-align: right;
+	margin-top: 40px;
+	padding: 0.755em;
+	margin-right: 2px;
+	margin-left: 150px;
+	min-width: 1.5em;
+	padding: 0.5em 1em;
+	text-align: center;
+	border: 1px;
+	
+	
+	border-radius: 8px !important;
+	
+	color: #000 !important;
+}
+
+.export-btn:hover{
+	border: 1px solid #979797;
+
+  	background: none !important;
+
+  	border-radius: 8px !important;
+
+   	background-color: #000 !important;
+
+   	color: #fff !important;
+}
+
+.container {
+	position: absolute;
+	margin-top: 16px;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.panel-body{
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+table {
+	width: 45rem;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+th,
+td {                           
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead th {
+	background-color: #55608f;
+}
+
+tbody tr:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+
+tbody td{
+	position: relative;
+}
+
+tbody td:hover::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -9999px;
+	bottom: -9999px;
+	background-color: rgba(255,255,255,0.2);
+	z-index: -1;
+}
+.dataTables_wrapper .dataTables_filter {
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+
+.dataTables_wrapper .dataTables_length {
+	float: left;
+	text-align: left;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+}
+.dataTables_wrapper .dataTables_info {
+	clear: both;
+	float: left;
+	padding: 0.755em;
+		margin-top: 10px;
+
+}
+.dataTables_wrapper .dataTables_paginate  {
+	float: right;
+	text-align: right;
+	margin-top: 10px;
+	padding: 0.755em;
+	margin-right: 2px;
+
+
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	box-sizing: border-box;
+	min-width: 1.5em;
+	padding: 0.5em 1em;
+	margin-right: 2px;
+	padding: 0.755em;
+	text-align: center;       
+	
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+
+	background: none !important;
+	
+	border-radius: 10px !important;
+	
+	color: #000 !important;
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+
+  	border: 1px solid #979797;
+
+  	background: none !important;
+
+  	border-radius: 10px !important;
+
+   	background-color: #000 !important;
+
+   	color: #fff !important;
+
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+
+      .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+
+    background: none !important;
+
+    border-radius: 10px;
+
+    background-color: var(--theadColor) !important;
+
+    color:#fff !important
+
+}
+
+
